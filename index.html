@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+  <!-- Museo 3D Platform
+  Copyright (c) 2025 Ricardo De la Cruz
+  All Rights Reserved.
+
+  Unauthorized copying, distribution or modification is prohibited. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>❤️ Nuestra Historia en 3D ❤️</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+</head>
+<body>
+    <div id="loader-overlay">
+        <div class="loader-card">
+            <div class="loader-title">Cargando tu museo...</div>
+            <div class="loader-subtitle">Preparando recuerdos en 3D ✨</div>
+            <div class="loader-bar">
+                <div class="loader-bar-fill" id="loader-bar-fill"></div>
+            </div>
+            <div class="loader-percent" id="loader-percent">0%</div>
+        </div>
+    </div>
+
+    <div id="info">
+        <span>✨Nuestra historia en 3D✨</span>
+        <span class="hint">Haz clic para entrar · WASD para moverte · Ratón para mirar</span>
+    </div>
+
+    <div id="rotate-overlay">
+        <div>
+            <h2>📱 Gira tu teléfono</h2>
+            <p>Usa el museo en modo horizontal. Esta experiencia se disfruta mucho mejor en laptop o computadora 💻</p>
+        </div>
+    </div>
+
+    <div id="joystick">
+        <div id="joystick-inner"></div>
+    </div>
+
+    <div id="gazePopup"></div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.159.0/three.module.min.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.159.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="js/main.min.js"></script>
+</body>
+</html>
