@@ -228,16 +228,16 @@
   }
 
   #info .hint {
-    font-size: 10px;   /* antes heredaba, ahora más chiquito */
+    font-size: 7px;   /* antes heredaba, ahora más chiquito */
   }
 
   /* 🔹 Popup de texto de los cuadros en móvil */
   #gazePopup {
     bottom: 18px;
-    padding: 14px 16px 10px;
+    padding: 10px 12px 8px;
     border-radius: 14px;
-    font-size: 0.8rem;
-    max-width: 92vw;
+    font-size: 0.6rem;
+    max-width: 85vw;
   }
 }
 
